@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do App</title>
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- Sweet alert -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.0/dist/sweetalert2.all.min.js"
+      integrity="sha256-4ENkSLB+IuTUdCcOeFHbDR4ut5k2cbr/qi9UXMSa7+w="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- JS -->
+    <script src="app.js" defer></script>
+  </head>
+
+  <body>
+    <template id="no-task">
+      <span class="no-tasks-message">No Tasks To Show</span>
+    </template>
+    <div class="todo-container">
+      <div class="add-task">
+        <input type="text" placeholder="Tap Your Activate Today" />
+        <span class="plus">+</span>
+      </div>
+      <div class="tasks-content"></div>
+    </div>
+    <div class="task-stats">
+      <div class="count-tasks">Tasks <span>0</span></div>
+      <div class="completed-tasks">Completed <span>0</span></div>
+      <button id="btn">Clear</button>
+    </div>
+  </body>
+</html>
